@@ -1,0 +1,22 @@
+
+
+def make_parts(arg1, arg2):
+    if arg1 == 'metals' and arg2 == 'labours':
+        return 'Shiny Parts'
+    else:
+        return 'Not Shinny Parts'
+
+
+def build_car(arg1):
+    if arg1 == 'Shiny Parts':
+        return 'making car'
+    else:
+        return 'Not good enough'
+
+def run_factory_car(arg1, arg2):
+    make_parts_build = make_parts(arg1, arg2)
+    build_car_build = build_car(make_parts_build)
+    return build_car_build
+
+
+
